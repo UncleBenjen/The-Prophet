@@ -1,0 +1,390 @@
+/*** uncss> filename: https://fonts.googleapis.com/css?family=Lato:400,300,100|Playfair+Display:400,400italic,700italic ***/
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://fonts.gstatic.com/s/lato/v11/zJY4gsxBiSo5L7tNutxFNg.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/2NBgzUtEeyB-Xtpr9bm1Cczai8e7xzqnKiVb1EwOy0E.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6N218GKU_F_kIyfK-gGC-Yzs.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/n7G4PqJvFP2Kubl0VBLDEGewmj-_04VMEgCJvu_4mtU.ttf) format('truetype');
+}
+
+/*** uncss> filename: src/css/main.css ***/
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+  p,
+  h2 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #212121;
+  margin: 0;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+button#activateNav {
+  outline: none;
+  position: fixed;
+  top: 2vw;
+  left: 2vw;
+  z-index: 1000;
+  background: none;
+  border: none;
+}
+
+span.bar {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 5px 0;
+  border-radius: 1px;
+  border-bottom: 2px #222 solid;
+}
+
+button.clicked > span.bar {
+  border-bottom: 2px #fff solid;
+}
+
+/*
+button.clicked > span.bar:first-child{
+    transform: rotate(45deg);  
+    margin:0;
+    border-bottom: 2px #fff solid; 
+}
+button.clicked > span.bar:nth-child(2){
+    display: none;
+}
+button.clicked > span.bar:last-child{
+    transform: rotate(-45deg);
+    margin:0;
+
+    border-bottom: 2px #fff solid; 
+}*/
+
+nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  overflow-y: auto;
+  background-color: #444;
+  opacity: 0;
+  transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+}
+
+nav.active {
+  display: flex;
+  opacity: 0.975;
+}
+
+nav > ol {
+  height: 80vh;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav > ol > li {
+  margin: 3vh 0;
+}
+
+li > a {
+  text-decoration: none;
+  font-size: 5vmin;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+li > a:visited {
+  color: #ccc;
+}
+
+li > a:hover {
+  border-bottom: 1px white solid;
+}
+
+.viewport {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100vw;
+}
+
+/**/
+
+.center {
+  flex: 1 0 auto;
+}
+
+.title-section {
+  background-color: #222;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.title {
+  font-size: 25vmin;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  margin-left: 10vw;
+  margin-bottom: 5vmin;
+}
+
+.subtitle {
+  font-size: 5vmin;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 10vw;
+}
+
+.chapter-section-header {
+  background-color: #222;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.chapter-section-header > span {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 5vmin;
+  word-spacing: 0.4vmin;
+}
+
+.chapter-section-header > h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 8vmin;
+  font-weight: 300;
+}
+
+p {
+  font-size: 4vmin;
+  line-height: 7.5vmin;
+  word-spacing: 0.45vw;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+p,
+h2 {
+  font-family: 'Playfair Display', serif;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+div.chapter-section > p:first-of-type:first-letter {
+  font-size: 8vw;
+  line-height: 4vw;
+  padding-top: 0.4vw;
+  padding-right: 1vw;
+  padding-left: 0.5vw;
+  float: left;
+  color: #222;
+}
+
+div.chapter-section > p > span:after {
+  content: "\A\0000a0\0000a0\0000a0";
+  white-space: pre;
+}
+
+footer {
+  width: 100vw;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+.footer-section-secondary {
+  display: flex;
+  display: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  height: 15vh;
+}
+
+.footer-section-secondary > span {
+  font-family: 'Lato', sans-serif;
+  font-size: 3vmin;
+  font-weight: 100;
+}
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 250px) and (max-device-width: 480px) {
+  p,
+  h2 {
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
+
+  .chapter-section-header {
+    height: 60vh;
+  }
+
+  .title-section {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 481px)  and (max-device-width: 1024px) {
+  p,
+  h2 {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .title-section {
+    align-items: center;
+    justify-content: center;
+  }
+}
