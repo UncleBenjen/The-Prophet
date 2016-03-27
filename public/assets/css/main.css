@@ -221,7 +221,9 @@ button.clicked > span.bar:last-child{
 
  nav{
     display: none;
+        -webkit-flex-direction: column;
     flex-direction:column;
+
     align-items: center;
     justify-content:center;
 
@@ -291,6 +293,7 @@ button.clicked > span.bar:last-child{
     display: -webkit-flex;
     display: flex;
 
+    -webkit-flex-direction:row;
     flex-direction:row;
     align-items:start;
 
@@ -327,7 +330,9 @@ button.clicked > span.bar:last-child{
     display: -webkit-flex;
     display: flex;
 
+    -webkit-flex-direction: column;
     flex-direction:column;
+
     align-items:center;
     align-content:center;
     justify-content:center;
@@ -503,7 +508,9 @@ footer a:hover{
 }
 
 .row{
+    display: -webkit-flex;
     display:flex;
+    -webkit-flex-direction: row;
     flex-direction: row;
 }
 .space-between{
@@ -518,7 +525,8 @@ footer a:hover{
         display: -ms-flex;
     display: -webkit-flex;
     display: flex;
-    
+
+    -webkit-flex-direction: column;
     flex-direction: column;
 }
 
