@@ -224,6 +224,7 @@ button.clicked > span.bar:last-child{
         -webkit-flex-direction: column;
     flex-direction:column;
 
+    -webkit-align-items:center;
     align-items: center;
     justify-content:center;
 
@@ -295,6 +296,7 @@ button.clicked > span.bar:last-child{
 
     -webkit-flex-direction:row;
     flex-direction:row;
+        -webkit-align-items:start;
     align-items:start;
 
 }
@@ -333,6 +335,7 @@ button.clicked > span.bar:last-child{
     -webkit-flex-direction: column;
     flex-direction:column;
 
+    -webkit-align-items:center;
     align-items:center;
     align-content:center;
     justify-content:center;
@@ -432,10 +435,12 @@ a.btn:active{
   animation: shadow .75s 1; 
 }
 .left{
+        -webkit-align-self:flex-start;
     align-self: flex-start;
     float:left;
 }
 .left{
+            -webkit-align-self:flex-end;
     align-self: flex-end;
     float:right;
 }
@@ -518,6 +523,7 @@ footer a:hover{
 }
 
 .lg-end{
+    -webkit-align-items: flex-end;
     align-items: flex-end;
 }
 
@@ -539,9 +545,12 @@ footer a:hover{
         padding: 0 13vw;
     }
     .sm-100{
+        -webkit-flex: 1 0 100% !important;          /* Chrome */
+          -ms-flex: 1 0 100% !important; 
         flex: 1 0 100% !important;
     }
     .sm-start{
+            -webkit-align-items: flex-start !important;
         align-items: flex-start !important;
     }
     .chapter-section-header{
@@ -557,6 +566,7 @@ footer a:hover{
         color: #222;
     }
     .title-section{
+            -webkit-align-items: center;
         align-items:center;
         justify-content:center;
     }
@@ -568,6 +578,8 @@ footer a:hover{
         padding: 0 15vw;
     }
     .lg-50{
+          -webkit-flex: 1 1 0 50% !important;          /* Chrome */
+  -ms-flex: 1 1 0 50% !important; 
         flex: 1 0 50% !important;
     }
     .chapter-content > p:first-of-type:first-letter{
@@ -580,6 +592,7 @@ footer a:hover{
         color: #222;
     }
     .title-section{
+            -webkit-align-items:center;
         align-items:center;
         justify-content:center;
     }
