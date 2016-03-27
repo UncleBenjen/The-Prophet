@@ -271,12 +271,6 @@ button.clicked > span.bar:last-child{
    color:#eee;
  }
  
-.viewport{
-    display: flex;
-    flex-direction:column;
-    align-items:start;
-    width:100vw;
-}
 
 /**/
 .center{
@@ -293,7 +287,10 @@ button.clicked > span.bar:last-child{
     background-color: #212121;
     color:#fff;
 
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
+
     flex-direction:row;
     align-items:start;
 
@@ -325,7 +322,11 @@ button.clicked > span.bar:last-child{
     color:#fff;
     height: 100vh;
     width:100vw;
+
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
+
     flex-direction:column;
     align-items:center;
     align-content:center;
@@ -449,7 +450,10 @@ a.btn:active{
     -webkit-font-smoothing: antialiased;
 }
 i{
+        display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
+
     vertical-align: middle;
 }
 .btn.left > i {
@@ -458,32 +462,8 @@ i{
 .btn.right > i {
     margin-left: 8px;
 }
-/*
-footer{
-    width: 100vw; color: #fff;
-     font-family: 'Lato', sans-serif;
-    font-weight: 100;
-}
-.footer-section-primary{
-     background-color:#444; height:40vh;
 
-}
-.footer-section-secondary{
-    display: flex;
-    display: column;
-    justify-content: center;
-    align-items: center; 
 
-    background-color:#222;
-     height: 15vh;
-
-}
-.footer-section-secondary > span{
-    
-    font-family: 'Lato', sans-serif;
-    font-size: 3vmin;
-    font-weight: 100;
-}*/
 footer{
     color:#b1b1b1;
 
@@ -535,7 +515,10 @@ footer a:hover{
 }
 
 .col{
+        display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
+    
     flex-direction: column;
 }
 
