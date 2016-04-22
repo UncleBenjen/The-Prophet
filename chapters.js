@@ -119,47 +119,47 @@ var chapters = {
 		title:'On Love',
 		prelude: 'Love gives naught but itself and<br/>takes naught but from itself<br/>Love possesses not nor would it<br/>be possessed<br/>For love is sufficient unto love.',
 		text:'<span>Then said Almitra, "Speak to us of Love.</span>'+
-			'<span>And he raised his head and looked upon the people, and there fell a stillness upon them. And with a great voice he said</span>'+
-			'<span>When love beckons to you follow him</span>'+
-			'<span>Though his ways are hard and steep</span>'+
-			'<span>And when his wings enfold you yield to him</span>'+
-			'<span>Though the sword hidden among his pinions may wound you</span>'+
-			'<span>And when he speaks to you believe in him</span>'+
-			'<span>Though his voice may shatter your dreams as the north wind lays waste the garden</span>'+
+			'<span>And he raised his head and looked upon the people, and there fell a stillness upon them. And with a great voice he said:</span>'+
+			'<span>When love beckons to you follow him,</span>'+
+			'<span>Though his ways are hard and steep.</span>'+
+			'<span>And when his wings enfold you yield to him,</span>'+
+			'<span>Though the sword hidden among his pinions may wound you.</span>'+
+			'<span>And when he speaks to you believe in him,</span>'+
+			'<span>Though his voice may shatter your dreams as the north wind lays waste the garden.</span>'+
 			'<span></span>'+
-			'<span>For even as love crowns you so shall he crucify you. Even as he is for your growth so is he for your pruning</span>'+
-			'<span>Even as he ascends to your height and caresses your tenderest branches that quiver in the sun</span>'+
-			'<span>So shall he descend to your roots and shake them in their clinging to the earth</span>'+
-			'<span>Like sheaves of corn he gathers you unto himself</span>'+
-			'<span>He threshes you to make you naked</span>'+
-			'<span>He sifts you to free you from your husks</span>'+
-			'<span>He grinds you to whiteness</span>'+
-			'<span>He kneads you until you are pliant</span>'+
-			'<span>And then he assigns you to his sacred fire, that you may become sacred bread for God\'s sacred feast</span>'+
+			'<span>For even as love crowns you so shall he crucify you. Even as he is for your growth so is he for your pruning.</span>'+
+			'<span>Even as he ascends to your height and caresses your tenderest branches that quiver in the sun,</span>'+
+			'<span>So shall he descend to your roots and shake them in their clinging to the earth.</span>'+
+			'<span>Like sheaves of corn he gathers you unto himself.</span>'+
+			'<span>He threshes you to make you naked.</span>'+
+			'<span>He sifts you to free you from your husks.</span>'+
+			'<span>He grinds you to whiteness.</span>'+
+			'<span>He kneads you until you are pliant;</span>'+
+			'<span>And then he assigns you to his sacred fire, that you may become sacred bread for God\'s sacred feast.</span>'+
 			'<span></span>'+
-			'<span>All these things shall love do unto you that you may know the secrets of your heart, and in that knowledge become a fragment of Life\'s heart</span>'+
+			'<span>All these things shall love do unto you that you may know the secrets of your heart, and in that knowledge become a fragment of Life\'s heart.</span>'+
 			'<span></span>'+
-			'<span>But if in your fear you would seek only love\'s peace and love\'s pleasure</span>'+
-			'<span>Then it is better for you that you cover your nakedness and pass out of love\'s threshing-floor</span>'+
-			'<span>Into the seasonless world where you shall laugh, but not all of your laughter, and weep, but not all of your tears</span>'+
+			'<span>But if in your fear you would seek only love\'s peace and love\'s pleasure,</span>'+
+			'<span>Then it is better for you that you cover your nakedness and pass out of love\'s threshing-floor,</span>'+
+			'<span>Into the seasonless world where you shall laugh, but not all of your laughter, and weep, but not all of your tears.</span>'+
 			'<span></span>'+
-			'<span>Love gives naught but itself and takes naught but from itself</span>'+
-			'<span>Love possesses not nor would it be possessed</span>'+
-			'<span>For love is sufficient unto love</span>'+
+			'<span>Love gives naught but itself and takes naught but from itself.</span>'+
+			'<span>Love possesses not nor would it be possessed;</span>'+
+			'<span>For love is sufficient unto love.</span>'+
 			'<span></span>'+
 			'<span>When you love you should not say, "God is in my heart," but rather, "I am in the heart of God.</span>'+
-			'<span>And think not you can direct the course of love, for love, if it finds you worthy, directs your course</span>'+
+			'<span>And think not you can direct the course of love, for love, if it finds you worthy, directs your course.</span>'+
 			'<span></span>'+
-			'<span>Love has no other desire but to fulfil itself</span>'+
-			'<span>But if you love and must needs have desires, let these be your desires</span>'+
-			'<span>To melt and be like a running brook that sings its melody to the night</span>'+
-			'<span>To know the pain of too much tenderness</span>'+
-			'<span>To be wounded by your own understanding of love</span>'+
-			'<span>And to bleed willingly and joyfully</span>'+
-			'<span>To wake at dawn with a winged heart and give thanks for another day of loving</span>'+
-			'<span>To rest at the noon hour and meditate love\'s ecstasy</span>'+
-			'<span>To return home at eventide with gratitude</span>'+
-			'<span>And then to sleep with a prayer for the beloved in your heart and a song of praise upon your lips</span>'	,
+			'<span>Love has no other desire but to fulfil itself.</span>'+
+			'<span>But if you love and must needs have desires, let these be your desires:</span>'+
+			'<span>To melt and be like a running brook that sings its melody to the night.</span>'+
+			'<span>To know the pain of too much tenderness.</span>'+
+			'<span>To be wounded by your own understanding of love;</span>'+
+			'<span>And to bleed willingly and joyfully.</span>'+
+			'<span>To wake at dawn with a winged heart and give thanks for another day of loving;</span>'+
+			'<span>To rest at the noon hour and meditate love\'s ecstasy;</span>'+
+			'<span>To return home at eventide with gratitude;</span>'+
+			'<span>And then to sleep with a prayer for the beloved in your heart and a song of praise upon your lips.</span>'	,
 		prevChapter: {url:'/prologue', title:'The Coming of the Ship'},
  		nextChapter: {url:'/marriage', title:'On Marriage'}
 	},
@@ -167,7 +167,7 @@ var chapters = {
 	marriage:{
 		title:'On Marriage',
 		prelude: 'Sing and dance together and<br>be joyous, but let each one of you<br>be alone.<br>Even as the strings of a lute are.<br>alone though they quiver with the<br>same music.',
-		text: '<span>Then Almitra spoke again and said, "And what of Marriage, master?</span><span>And he answered saying</span><span>You were born together, and together you shall be forevermore</span><span>You shall be together when white wings of death scatter your days</span><span>Aye, you shall be together even in the silent memory of God</span><span>But let there be spaces in your togetherness</span><span>And let the winds of the heavens dance between you</span><span></span><span>Love one another but make not a bond of love</span><span>Let it rather be a moving sea between the shores of your souls</span><span>Fill each other\'s cup but drink not from one cup</span><span>Give one another of your bread but eat not from the same loaf</span><span>Sing and dance together and be joyous, but let each one of you be alone</span><span>Even as the strings of a lute are alone though they quiver with the same music</span><span></span><span>Give your hearts, but not into each other\'s keeping</span><span>For only the hand of Life can contain your hearts</span><span>And stand together, yet not too near together</span><span>For the pillars of the temple stand apart</span><span>And the oak tree and the cypress grow not in each other\'s shadow</span>',
+		text: '<span>Then Almitra spoke again and said, "And what of Marriage, master?</span><span>And he answered saying:</span><span>You were born together, and together you shall be forevermore.</span><span>You shall be together when white wings of death scatter your days.</span><span>Aye, you shall be together even in the silent memory of God.</span><span>But let there be spaces in your togetherness.</span><span>And let the winds of the heavens dance between you.</span><span></span><span>Love one another but make not a bond of love:</span><span>Let it rather be a moving sea between the shores of your souls.</span><span>Fill each other\'s cup but drink not from one cup.</span><span>Give one another of your bread but eat not from the same loaf.</span><span>Sing and dance together and be joyous, but let each one of you be alone,</span><span>Even as the strings of a lute are alone though they quiver with the same music.</span><span></span><span>Give your hearts, but not into each other\'s keeping.</span><span>For only the hand of Life can contain your hearts.</span><span>And stand together, yet not too near together:</span><span>For the pillars of the temple stand apart,</span><span>And the oak tree and the cypress grow not in each other\'s shadow.</span>',
 		prevChapter: {url:'/love', title:'On Love'},
  		nextChapter: {url:'/children', title:'On Children'}
 	},
