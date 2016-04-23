@@ -308,16 +308,17 @@ button.clicked > span.bar:last-child{
     flex-direction:row;
 
 
-    -webkit-align-items:start;
-    align-items:start;
+    -webkit-align-items: center;
+    align-items: center;
 
 }
 .title{
-    font-size: 25vmin;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    margin-left:10vw;
-    margin-bottom: 5vmin;
+
+    margin: 2.4rem;
+    margin-left: 10vw;
+
 }
 .subtitle{
     font-size: 5vmin;
@@ -338,7 +339,7 @@ button.clicked > span.bar:last-child{
     background-color: rgba(13, 13, 13, 0.925);
     color:#fff;
     height: 100vh;
-    width:100vw;
+    width: 100vw;
 
     display: -webkit-flex;
     display: flex;
@@ -385,28 +386,25 @@ p,h2{
 .container{
     padding: 0 20vw;
 }
-.container p{
-    font-family: 'Playfair Display', serif;
-    font-size: 3.25vmin;
-    line-height: 7.5vmin;
-    word-spacing: 0.45vw;
-    padding-top: 2em;
-    margin-bottom: 0;
 
-}
 .chapter-content{
-    z-index: 10; margin-top: 100vh; position: relative; background-color: #fff;"
-}
-.chapter-content > p:first-of-type:first-letter{
-    font-size: 8vw; 
-    line-height: 4vw; 
-    padding-top: 0.4vw; 
-    padding-right: 1vw; 
-    padding-left: 0.5vw; 
-    float: left; 
+    z-index: 10; 
+    margin-top: 100vh; 
+    position: relative; 
+    background-color: #fff;
+    
     color: #222;
+    font-family: 'Playfair Display', serif;
 }
-.chapter-content > p > span:after{
+/*More styles in media queries*/
+.chapter-text{
+    margin-bottom: 0;
+}
+.chapter-text:first-letter{
+    float: left; 
+}
+/**/
+.chapter-text > span:after{
     content:"\A\0000a0\0000a0\0000a0"; white-space:pre; 
 }
 
@@ -512,13 +510,13 @@ footer a:hover{
 }
 .footer-text{
 
-    color:#b1b1b1 !important;
+    color:#b1b1b1;
     padding: 0; 
     margin: 0; 
     font-size: 1rem;
     line-height: inherit;
     line-height: 1.5;
-    font-weight: 200;
+    font-weight: normal;
     word-spacing: normal;
 }
 .footer-header{
@@ -558,44 +556,28 @@ footer a:hover{
     -webkit-flex: 1 0 50%;
     flex: 1 0 50%;
 }
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 250px) and (max-device-width: 480px) {
-     .hide-sm{
-        display: none;
-     }
-     .container{
-        padding: 0 13vw;
+
+.flex-space{
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+
+
+
+/* lg - laptops/desktops  */
+@media only screen and (min-width: 1025px) {
+
+    .title{
+        font-size: 150px !important;
     }
-    .sm-100{
-        -webkit-flex: 1 0 100% !important;   
-        flex: 1 0 100% !important;
-    }
-    .sm-start{
-        -webkit-align-items: flex-start !important;
-        align-items: flex-start !important;
-    }
-    .chapter-section-header{
-        height: 100vh;
-    }
-    .chapter-content > p:first-of-type:first-letter{
-        font-size: 15vw; 
-        line-height: 8vw; 
-        padding-top: 2vw; 
-        padding-right: 3vw; 
-        padding-left: 0.5vw; 
-        float: left; 
-        color: #222;
-    }
-    .title-section{
-        -webkit-align-items: center;
-        align-items:center;
-        -webkit-justify-content:center;
-        justify-content:center;
+    .subtitle{
+        font-size: 35px !important;
     }
 }
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 481px)  and (max-device-width: 1024px) {
+/* medium - tablets and portrait phones */
+@media only screen and (min-width: 600px)  and (max-width: 1024px) {
     .container{
         padding: 0 15vw;
     }
@@ -617,5 +599,60 @@ footer a:hover{
         align-items:center;
         -webkit-justify-content:center;
         justify-content:center;
+    }
+    .title{
+        font-size: 15vw;
+    }
+    .subtitle{
+        font-size: 3.5vw;
+    }    
+}
+
+/* small - phones mainly */
+@media only screen and (min-width: 250px) and (max-width: 599px) {
+     .hide-sm{
+        display: none;
+     }
+     .container{
+        padding: 0 13vw;
+    }
+    .sm-100{
+        -webkit-flex: 1 0 100% !important;   
+        flex: 1 0 100% !important;
+    }
+    .sm-start{
+        -webkit-align-items: flex-start !important;
+        align-items: flex-start !important;
+    }
+    .chapter-section-header{
+        height: 100vh;
+    }
+    .chapter-text{
+
+        font-size: 1rem;
+        line-height: 1.9rem;
+        word-spacing: 3px;
+        padding-top: 2em;
+        margin-bottom: 0;
+
+    }
+    .chapter-text:first-letter{
+        font-size: 4.2rem; 
+        line-height: 2.4rem; 
+        padding-top: 4px; 
+        padding-right: 8px; 
+        padding-left: 8px; 
+    }
+    .title-section{
+        -webkit-align-items: center;
+        align-items:center;
+        -webkit-justify-content:center;
+        justify-content:center;
+    }
+    .title{
+        font-size: 20vw;
+    }
+    .subtitle{
+        font-size: 5vw;
     }
 }

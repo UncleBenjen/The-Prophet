@@ -8,14 +8,14 @@
 
     <div class="container chapter-content" style=" box-shadow: 0 -12px 15px 0 rgba(0,0,0,0.24), 0 -17px 50px 0 rgba(0,0,0,0.19);">
    	
-	   	<p>{{{ text }}}</p>
+	   	<p class="chapter-text">{{{ text }}}</p>
 	    
 	    <div class="row space-between" style="margin-bottom: 32px; flex-wrap: wrap;">
 
 	    {{#if prevChapter}}
 			<a href="{{ prevChapter.url }}" class="btn left"><i class="material-icons">navigate_before</i>{{ prevChapter.title }}</a>
 		{{/if}}
-			<span style="flex: 1 0 auto;"></span>
+			<span class="flex-space"></span>
 	    {{#if nextChapter}}
 			<a href="{{ nextChapter.url }}" class="btn right">{{ nextChapter.title }}<i class="material-icons">navigate_next</i></a>
 		{{/if}}
