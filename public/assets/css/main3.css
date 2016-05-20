@@ -1,21 +1,12 @@
 html{
-	height:100%;
-	width: 100%;
-	margin:0;
+    width:100%; 
 }
-
 body{
-	height:100%;
-	width: 100%;
-	margin:0;
-	background-color: #f7f7f7;
+    width:100%;
+    background-color: #f7f7f7;
     color:#212121;
-
-    display:flex;
-    flex-direction:column;
+    margin:0;
 }
-
-
 
 /*UTILS*/
 .center{
@@ -59,7 +50,70 @@ body{
 }
 
 
+/*TITLE*/
+.title-section{
+	height: 100%;
+    width:100%;
 
+	position: absolute;
+    top:0;
+    left:0;
+
+    padding: 0 36px;
+
+    background-color: #212121;
+    color:#fff;
+
+    -webkit-align-items: center;
+    align-items: center;
+}
+.title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+.subtitle{
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+/*CHAPTER*/
+.chapter-section{
+	position: relative;
+	top:0;
+	left:0;
+	height: 100%;
+	width:100%;
+}
+.background-pattern{
+    background-image: url('../img/arabic-pattern2.jpg'); 
+    background-repeat: repeat;
+}
+
+.chapter-section-header{
+    background-color: rgba(13, 13, 13, 0.95);
+    color:#fff;
+
+    position: relative;
+    top:0;
+    left:0;
+
+    width: 100%;
+    heigh: 100%;
+
+    -webkit-align-items:center;
+    align-items:center;
+
+    -webkit-align-content:center;
+    align-content:center;
+
+    -webkit-justify-content:center;
+    justify-content:center;
+}
+.chapter-content{
+	position: rel
+}
 /*NAV*/
 .no-scroll{
     overflow:hidden !important; 
@@ -155,7 +209,7 @@ button.clicked > span.bar:last-child{
  }
  li > a {
     text-decoration: none;
-    font-size:1.5rem;
+    font-size:1.0rem;
 
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -168,134 +222,6 @@ button.clicked > span.bar:last-child{
   li > a:hover {
    color:#eee;
  }
-
-
-
-.title-section{
-	box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-	height:100%;
-    padding: 0 36px;
-
-    background-color: #212121;
-    color:#fff;
-
-	-webkit-flex:1 0 auto;
-	flex:1 0 auto;
-
-	display:-webkit-flex;
-	display:flex;
-
-	-webkit-align-items:center;
-	align-items: center;
-}
-.title{
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 4rem;
-}
-.subtitle{
-    font-size: 2rem;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-weight: 400;
-}
-
-
-
-
-.chapter-section{
-	display:-webkit-flex;
-	display:flex;
-
-	-webkit-flex-direction:column;
-	flex-direction: column;
-
-	-webkit-flex:1 0 auto;
-	flex:1 0 auto;
-
-	height:100%;
-}
-.background-pattern{
-    background-image: url('../img/arabic-pattern2.jpg'); 
-    background-repeat: repeat;
-
-    	display:-webkit-flex;
-	display:flex;
-
-	-webkit-flex-direction:column;
-	flex-direction: column;
-
-	-webkit-flex:1 0 auto;
-	flex:1 0 auto;
-
-		height:100%;
-}
-.chapter-section-header{
-    background-color: rgba(13, 13, 13, 0.95);
-    color:#fff;
-
-    	display:-webkit-flex;
-	display:flex;
-
-	-webkit-flex-direction:column;
-	flex-direction: column;
-
-	-webkit-justify-content:center;
-	justify-content: center;
-
-	-webkit-align-items:center;
-	align-items: center;
-
-	-webkit-flex:1 0 auto;
-	flex:1 0 auto;
-
-}
-
-.chapter-section-header > h2{
-    font-family: 'Lato', sans-serif;
-    font-size: 2.0rem;
-
-    font-weight: 300;
-}
-.chapter-section-header > span{
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 1.3rem;
-    word-spacing: 0.05rem;
-    letter-spacing: 0.05rem;
-}
-.chapter-content{
-	flex:1 0 auto;
-}
-.container{
-	overflow-x:hidden;
-	margin: 12px 36px;
-	max-width:800px;
-
-	-webkit-align-self:center;
-	align-self: center;
-}
-/*More styles in media queries*/
-.chapter-text{
-
-    font-size: 1.25rem;
-    line-height: 1.9rem;
-}
-.chapter-text:first-letter{
-	    float: left;
-    font-size: 4.2rem; 
-    line-height: 2.4rem; 
-    padding-top: 12px; 
-    padding-right: 4px; 
-    padding-left: 8px; 
-}
-/**/
-.chapter-text > span{
-    overflow: hidden;
-}
-.chapter-text > span:after{
-    content:"\A\0000a0\0000a0\0000a0"; white-space:pre; 
-}
 
 
 /*BOTTOM BUTTONS*/
@@ -379,12 +305,13 @@ i{
     margin-left: 8px;
 }
 
-
 /*FOOTER*/
 footer{
     color:#b1b1b1;
+
     font-family: 'Lato', sans-serif;
-    background-color: #282828;
+    position: relative;
+    z-index: 10;
 }
 footer a{
     font-family: 'Lato', sans-serif;
@@ -399,6 +326,7 @@ footer a:hover{
     color:#eee;
 }
 .footer-text{
+
     color:#b1b1b1;
     padding: 0; 
     margin: 0; 
@@ -414,69 +342,4 @@ footer a:hover{
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
-}
-.primary-footer-container{
-	padding: 32px 64px;
-
-	display: -webkit-flex;
-    display:flex;
-
-    -webkit-flex-direction: row;
-    flex-direction: row;
-
-    -webkit-flex-wrap; wrap;
-	flex-wrap: wrap;
-
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-}
-.secondary-footer-container{
-	height: 64px; 
-	padding: 0 64px; 
-	background-color: #212121; 
-
-
-	display: -webkit-flex;
-    display:flex;
-
-    -webkit-flex-direction: column;
-    flex-direction: row;
-
-    -webkit-flex-wrap; wrap;
-	flex-wrap: wrap;
-
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-	align-items: center;
-}
-
-
-/* lg - laptops/desktops  */
-@media only screen and (min-width: 1025px) {
-
-    .lg-50{
-        -webkit-flex: 1 1 0 50% !important; 
-        flex: 1 0 50% !important;
-    }
-}
-
-/* medium - tablets and portrait phones */
-@media only screen and (min-width: 600px)  and (max-width: 1024px) {
-
- 
-}
-
-/* small - phones mainly */
-@media only screen and (min-width: 250px) and (max-width: 599px) {
-     .hide-sm{
-        display: none;
-     }
-    .sm-100{
-        -webkit-flex: 1 0 100% !important;   
-        flex: 1 0 100% !important;
-    }
-    .sm-start{
-        -webkit-align-items: flex-start !important;
-        align-items: flex-start !important;
-    }
 }
