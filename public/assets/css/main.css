@@ -284,7 +284,6 @@ button.clicked > span.bar:last-child{
 }
 /*More styles in media queries*/
 .chapter-text{
-    white-space: pre-line;
     font-size: 1.25rem;
     line-height: 1.9rem;
 }
@@ -298,7 +297,6 @@ button.clicked > span.bar:last-child{
 }
 /**/
 .chapter-text > span{
-    overflow: hidden;
 }
 .chapter-text > span:after{
     content:"\A\0000a0\0000a0\0000a0"; white-space:pre; 
