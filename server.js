@@ -5,7 +5,7 @@ var routes 	= require('./routes.js');
 
 //EXPRESS APP & VIEW ENGINE
 var app = express();
-var hbs = exphbs.create({defaultLayout: 'main', partialsDir: [__dirname + '/views/partials', __dirname + '/views/' ] });
+var hbs = exphbs.create({defaultLayout: 'main', partialsDir: [__dirname + '/views/partials', __dirname + '/views/' ], extname:'.handlebars' });
 
 //CONFIG HANDLEBARS (VIEW ENGINE)
 app.engine('handlebars', hbs.engine);
